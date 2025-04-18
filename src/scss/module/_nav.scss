@@ -1,48 +1,68 @@
+@use  "../base/config" as *;
+
 
 .nav {
-    background-color: lightblue;
+    background-color: white;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1.2rem 2rem;
     
 }
 
 .link.link--nav {
     width: 100%;
     border-radius: 0;
+    border: 0;
+    background-color: $header-color;
+    text-align: center;
+    padding: 2rem;
+   
 
+}
+
+
+.item.item--nav:last-child {
+
+    border: 2px solid  white;
+    
 
 
 }
 
+
+
 .list.list--nav{
-    top: 4rem;
+    top: 6rem;
     position: absolute;
-    width: 70%;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%);
+    padding: 0 5rem;
+    padding-bottom: 5rem;
+    background-color: $header-color;
+  
   
 }
 
 
 .box.box--nav {
-    width: 4rem;
-    height: 4rem;
-    background-color: black;
+    width: 3rem;
+    height: 3rem;
     display: inline-block;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    border: 2px solid $primary-color;
 }
 
 .ham.ham--nav {
     width: 70%;
     height: 2px;
-    background-color: white;
-
+    background-color: $primary-color;
     position: relative;
     
 }
@@ -56,7 +76,7 @@
     content:"";
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: $primary-color;
     position: absolute;
     top: 7px;
 }
@@ -70,7 +90,7 @@
     content:"";
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: $primary-color;
     position: absolute;
     top: 8px
 }
@@ -79,7 +99,7 @@
     content:"";
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: $primary-color;
     position: absolute;
     top: -8px
 }
@@ -87,6 +107,10 @@
 .ham.ham--nav.is--active::before{
     top: 0;
     transform: rotate(-45deg);
+}
+
+.link.link--logo{
+    border: 0;
 }
 @media screen and (min-width: 800px) {
      
@@ -102,8 +126,129 @@
         transform: translateX(0);
       
     }
+
+
     .item.item--nav {
         display: inline-block;
     }
+
+
+
+    .link.link--nav {
+       
+        padding: 1rem;
+        background-color: white;
+        color: $primary-color;
+        font-size: $fs-nav-link;
+       
+    
+    }
+
+    .list.list.list--nav {
+        padding-bottom: 0;
+        background-color: white;
+    }
+
+
+
+.item.item--nav:last-child {
+
+    border: 2px solid  $primary-color;
+    
+}
                            
 }
+
+
+
+/*
+
+
+//===============
+
+//font-stack
+
+//==============
+
+
+$font-family--heading: 'DM Serif Display', sans-serif;
+$font-family--body : 'Karla', sans-serif;
+
+
+
+//=================
+
+// font-weight
+
+//==================
+
+$font-weight-thin : 100;
+$font-weight-light : 300;
+$font-weight-medium : 400;
+$font-weight-bold : 700;
+$font-weight-ultra-bold : 900;  
+
+
+//=====================
+
+// descriptive color
+
+//=====================
+
+
+$white : #fff;
+
+$gray-500: #979797;
+
+
+$purple-900: #2D2641;
+$misty-blue: #96A9C6;
+$grayish-purple: #837D88;
+$gray-purple-900: #2C2830;
+$gray-lavender-500: #837D88;
+
+
+//====================
+
+// usage color
+
+//===================
+
+
+$primary-color: $purple-900;
+$secondary-color: $misty-blue;
+$nav-link-color: $grayish-purple;
+$header-color: $gray-purple-900;
+$p-color :  $gray-lavender-500;
+$footer-li-color: $purple-900;
+$logp-color: $gray-purple-900;
+
+
+//===========================
+
+// font-size  desktop
+
+//===========================
+
+
+$font-size--sm : 1.3rem;  // button  and navlink    footer-li-link footer-list header
+$font-size--md  : 1.6rem;  // paragraph
+$font-size--lg  : 2.8rem;  // card header
+$font-size--xlg  : 5.8rem; // breadcrumb  header 
+$font-size--xxlg : 7.2rem;  // hero header  / card section header
+
+@media (max-width: 768){
+    $font-size--xxlg : 4.8rem;
+}
+
+
+
+$fs-nav-link : $font-size--sm;
+$fs-btn      : $font-size--sm;
+$fs-p        : $font-size--md;
+$fs-sec-header : $font-size--xxlg;
+$fs-hero-header : $font-size--xxlg;
+$font-size-breadcrumb : $font-size--xlg;
+
+
+*/
