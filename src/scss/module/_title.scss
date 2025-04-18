@@ -1,0 +1,19 @@
+
+.title {
+    
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: blue;
+
+}
+
+.title--card.title {
+    //@include title-mixin('red');
+   color: red;
+}
+
+.title--footer.title {
+    text-align: center;
+   // @include title-mixin('blue');
+}

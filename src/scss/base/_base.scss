@@ -1,0 +1,22 @@
+@use  "config" as *;
+
+ body {
+    background-color: $white;
+    font-size: $font-size--md;
+    font-weight: $font-weight-medium
+ }
+
+ a {
+   text-decoration: none;
+   
+ }
+
+ ul,
+ ol {
+   list-style: none;
+ }
+
+
+ img {
+  width: 100%;
+ }
