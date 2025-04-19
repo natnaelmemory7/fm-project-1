@@ -1,4 +1,5 @@
 @use  '../base/config' as *;
+@use  '../layout/grid' as *;
 
 .hero  {
 
@@ -6,8 +7,173 @@
 }
 
 
+.container.container--hero {
+    max-width:  1440px;
+    padding: 0 ;
+}
+
+.hero__inner--right.col-2-2 {
+ 
+    padding: 5rem 2rem;
+    
+    border: 0;
+    
+}
+
+.hero__inner--left.col-2-1 {
+    border: 0;
+    margin-bottom: 0;
+}
 
 
+.hero__inner--right {
+    position: relative;
+    overflow: hidden;
+    border: 10px solid red;
+}
+
+
+.card.card--hero {
+    color: $white;
+}
+
+.title.title--hero {
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-family--heading;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    text-align: center;
+    font-size: $font-size--xlg;
+}
+
+.text.text--hero {
+    text-align: center;
+    line-height: 1.6;
+    font-family: $font-family--body;
+    font-size: $fs-p;
+
+}
+
+.btn.btn--hero {
+    font-size: $fs-btn;
+    font-family: $font-family--body;
+}
+
+
+
+
+
+
+.img.img--iml {
+    position: absolute;
+    top: 0;
+    width: 130px;
+    left: 0;
+    display: block;
+}
+
+
+.img.img--imr {
+    
+    position: absolute;
+    bottom:-220px;
+
+    width: 130px;
+    right: 0;
+    display: block;
+    
+}
+
+
+.card.card--hero {
+    gap: 5rem;
+}
+
+.img.img--idl  {
+    display: none;
+}
+
+
+.img.img--idr  {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px){
+    
+
+    .img.img--idr{
+        position: absolute;
+        width: 200px;
+        top: 80px;
+        right:0;
+        display: block;
+    }
+    
+
+    .img.img--iml ,.img.img--imr {
+        display: none;
+    }
+
+
+    .img.img--idl{
+        position: absolute;
+        width: 200px;
+        bottom: -180px;
+        left: 0;
+        display: block;
+    }
+    
+    .hero {
+        margin-bottom: 30rem;
+    }
+
+
+
+    .hero__inner {
+        padding-top: 5rem;
+        height: 60rem;
+        overflow: visible;
+    }
+   
+    .hero__inner--left.col-2-1 {
+        grid-column: 7/13;
+        
+    }
+    
+    .hero__inner--right.col-2-2{
+       overflow: hidden;
+        grid-column: 1/7;
+    }
+
+
+.title.title--hero {
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-family--heading;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.img.img--intro--right {
+    
+    position: absolute;
+    top: 0;
+
+    width: 300px;
+    right: -30px
+    
+}
+
+
+.mobile-only {
+    display: none;
+}
+
+
+}
 //===============
 
 //font-stack

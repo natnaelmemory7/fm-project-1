@@ -35,6 +35,7 @@
     display: block;
 }
 
+
 .link.link--logo {
     border: 0;
 }
@@ -44,6 +45,7 @@
     top: 440px;
     left: 0;
     display: none;
+    z-index: 1000;
 }
 
 
@@ -92,6 +94,7 @@
      text-align: center;
      padding: 2rem;
      font-size: $font-size--md;
+    
      
      
 
@@ -104,8 +107,11 @@
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: $purple-900;
+    background-color: $primary-color;
     height: 100vh;
+    z-index: 100;
+    padding: 0 4rem;
+    
   
 }
 
@@ -166,9 +172,13 @@
 
 .is--active.img.img--list {
     display: block;
-    width: 100%;
+    width: 100vw;
+    z-index: 1000;
 }
 
+.item.item--nav:last-child {
+    border: 2px solid white;
+}
 
 
 }
