@@ -1,68 +1,122 @@
 @use  "../base/config" as *;
-
+.header {
+    position: relative;
+}
 
 .nav {
-    background-color: white;
-    position: relative;
+    
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 1.2rem 2rem;
-    
+    padding: 1rem;
+
+}
+
+
+.item.item--nav {
+    display: inline-block;
 }
 
 .link.link--nav {
-    width: 100%;
-    border-radius: 0;
+    background-color: white;
+    color: $primary-color;
     border: 0;
-    background-color: $header-color;
-    text-align: center;
-    padding: 2rem;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: $font-family--body;
+    font-size: $fs-nav-link;
+
+}
+
+.list.list--nav {
+    border: 0;
+
    
+    display: block;
+}
 
+.link.link--logo {
+    border: 0;
+}
+
+.img.img--list {
+    position:absolute;
+    top: 440px;
+    left: 0;
+    display: none;
 }
 
 
-.item.item--nav:last-child {
-
-    border: 2px solid  white;
-    
 
 
-}
-
-
-
-.list.list--nav{
-    top: 6rem;
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0 5rem;
-    padding-bottom: 5rem;
-    background-color: $header-color;
+@media screen and (max-width: 768px){
   
-  
-}
 
+   .list.list--nav {
+      display: none;
+   }
 
-.box.box--nav {
+   .box.box--nav {
     width: 3rem;
     height: 3rem;
+    border: 1px solid black;
     display: inline-block;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    border: 2px solid $primary-color;
 }
+
+
+.nav {
+   
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.item.item--nav {
+
+    display: block;
+}
+
+.link.link--nav {
+    width: 100%;
+    border-radius: 0;
+     display: block;
+      background-color: $purple-900;
+     color: white;
+     text-align: center;
+     padding: 2rem;
+     font-size: $font-size--md;
+     
+     
+
+}
+
+.is--active.list.list--nav{
+    display: block;
+    top: 6rem;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $purple-900;
+    height: 100vh;
+  
+}
+
+
+
 
 .ham.ham--nav {
     width: 70%;
     height: 2px;
     background-color: $primary-color;
+
     position: relative;
     
 }
@@ -109,60 +163,27 @@
     transform: rotate(-45deg);
 }
 
-.link.link--logo{
-    border: 0;
+
+.is--active.img.img--list {
+    display: block;
+    width: 100%;
 }
-@media screen and (min-width: 800px) {
-     
-    .box.box--nav {
-        display: none;
-    }
-    .list.list--nav{
-        display: block;
-        
-        position: unset;
-       width:fit-content;
-        
-        transform: translateX(0);
-      
-    }
-
-
-    .item.item--nav {
-        display: inline-block;
-    }
 
 
 
-    .link.link--nav {
-       
-        padding: 1rem;
-        background-color: white;
-        color: $primary-color;
-        font-size: $fs-nav-link;
-       
-    
-    }
-
-    .list.list.list--nav {
-        padding-bottom: 0;
-        background-color: white;
-    }
-
-
-
-.item.item--nav:last-child {
-
-    border: 2px solid  $primary-color;
-    
 }
-                           
-}
+
+
+
+
+
+
+
+
 
 
 
 /*
-
 
 //===============
 
