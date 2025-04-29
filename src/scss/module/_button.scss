@@ -1,0 +1,13 @@
+
+
+
+@use "../util/mixin" as *;
+
+// Module
+.button {
+    @include button-init(blue, white);
+  
+    &:hover {
+      background-color: darkblue;
+    }
+  }

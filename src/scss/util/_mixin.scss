@@ -1,0 +1,11 @@
+// Common base for all buttons
+@mixin button-init($bg-color, $text-color) {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: $bg-color;
+    color: $text-color;
+    transition: background-color 0.3s;
+  }
