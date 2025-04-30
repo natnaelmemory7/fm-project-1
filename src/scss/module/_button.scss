@@ -1,13 +1,33 @@
-
+@use "../base/config" as * ;
 
 
 @use "../util/mixin" as *;
 
 // Module
 .button {
-    @include button-init(blue, white);
-  
+
+  &--hero {
+    @include button-init($primary-color, white);
+    border: 2px solid white;
     &:hover {
-      background-color: darkblue;
+      background-color: white;
+      color: $primary-color;
     }
+
+  }
+
+  &--breadcrumb {
+    @include button-init(white,$primary-color);
+    border: 2px solid white;
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+    position: relative;
+    z-index: 100;
+  }
+  
+
+
+  
   }

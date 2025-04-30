@@ -7,62 +7,26 @@
 }
 
 
-.container.container--hero {
-    max-width:  1440px;
-    padding: 0 ;
-}
+
 
 .hero__inner--right.col-2-2 {
  
-    padding: 5rem 2rem;
-    
-    border: 0;
-    
+
+    padding: 2rem 4rem 4rem;
 }
 
 .hero__inner--left.col-2-1 {
-    border: 0;
+
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 
 .hero__inner--right {
     position: relative;
     overflow: hidden;
-    border: 10px solid red;
+   
 }
-
-
-.card.card--hero {
-    color: $white;
-}
-
-.title.title--hero {
-    color: $white;
-    text-transform: uppercase;
-    font-family: $font-family--heading;
-    letter-spacing: 2px;
-    line-height: 1.6;
-    text-align: center;
-    font-size: $font-size--xlg;
-}
-
-.text.text--hero {
-    text-align: center;
-    line-height: 1.6;
-    font-family: $font-family--body;
-    font-size: $fs-p;
-
-}
-
-.btn.btn--hero {
-    font-size: $fs-btn;
-    font-family: $font-family--body;
-}
-
-
-
-
 
 
 .img.img--iml {
@@ -85,10 +49,6 @@
     
 }
 
-
-.card.card--hero {
-    gap: 5rem;
-}
 
 .img.img--idl  {
     display: none;
@@ -148,14 +108,7 @@
     }
 
 
-.title.title--hero {
-    color: $white;
-    text-transform: uppercase;
-    font-family: $font-family--heading;
-    letter-spacing: 2px;
-    line-height: 1.6;
-    text-align: center;
-}
+
 
 .img.img--intro--right {
     
@@ -174,88 +127,3 @@
 
 
 }
-//===============
-
-//font-stack
-
-//==============
-
-
-// $font-family--heading: 'DM Serif Display', sans-serif;
-// $font-family--body : 'Karla', sans-serif;
-
-
-
-// //=================
-
-// // font-weight
-
-// //==================
-
-// $font-weight-thin : 100;
-// $font-weight-light : 300;
-// $font-weight-medium : 400;
-// $font-weight-bold : 700;
-// $font-weight-ultra-bold : 900;  
-
-
-// //=====================
-
-// // descriptive color
-
-// //=====================
-
-
-// $white : #fff;
-
-// $gray-500: #979797;
-
-
-// $purple-900: #2D2641;
-// $misty-blue: #96A9C6;
-// $grayish-purple: #837D88;
-// $gray-purple-900: #2C2830;
-// $gray-lavender-500: #837D88;
-
-
-// //====================
-
-// // usage color
-
-// //===================
-
-
-// $primary-color: $purple-900;
-// $secondary-color: $misty-blue;
-// $nav-link-color: $grayish-purple;
-// $header-color: $gray-purple-900;
-// $p-color :  $gray-lavender-500;
-// $footer-li-color: $purple-900;
-// $logp-color: $gray-purple-900;
-
-
-// //===========================
-
-// // font-size  desktop
-
-// //===========================
-
-
-// $font-size--sm : 1.3rem;  // button  and navlink    footer-li-link footer-list header
-// $font-size--md  : 1.6rem;  // paragraph
-// $font-size--lg  : 2.8rem;  // card header
-// $font-size--xlg  : 5.8rem; // breadcrumb  header 
-// $font-size--xxlg : 7.2rem;  // hero header  / card section header
-
-// @media (max-width: 768){
-//     $font-size--xxlg : 4.8rem;
-// }
-
-
-
-// $fs-nav-link : $font-size--sm;
-// $fs-btn      : $font-size--sm;
-// $fs-p        : $font-size--md;
-// $fs-sec-header : $font-size--xxlg;
-// $fs-hero-header : $font-size--xxlg;
-// $font-size-breadcrumb : $font-size--xlg;

@@ -4,10 +4,6 @@ section {
 
 
 
-.col-1 {
-    
-
-}
 .col-2-1,.col-2-2,.col-3-1,.col-3-2,.col-3-3,
 .col-4-1,
 .col-4-2,
@@ -20,7 +16,7 @@ section {
 
 @media screen and (min-width: 768px){
 .container {
-    max-width: 960px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 3rem;
    
@@ -45,12 +41,12 @@ section {
 .col-1 {
     grid-column: 1/13;
     padding: 2rem;
-    border: 1px solid gray;
+    
 }
 
 .col-2-1,.col-2-2 {
     padding: 2rem;
-    border: 1px solid gray;
+   
    
 }
 
@@ -79,7 +75,7 @@ section {
 }
 .col-3-1,.col-3-2,.col-3-3 {
     padding: 2rem;
-    border: 1px solid gray;
+    
 }
 
 .col-4-1  {
@@ -111,10 +107,6 @@ section {
 
 
 
-// .col-4-1,.col-4-2,.col-4-3,.col-4-4 {
-//     padding: 2rem;
-//     border: 1px solid gray;
-// }
 
 
 
@@ -129,8 +121,9 @@ section {
 
 @media screen and (min-width: 1140px){
     .container {
-        max-width: 1440px;
+       max-width: 1440px;
         margin: 0 auto;
+       
        
     }
     .spacer {
@@ -152,12 +145,12 @@ section {
     .col-1 {
         grid-column: 1/13;
         padding: 2rem;
-        border: 1px solid gray;
+        
     }
     
     .col-2-1,.col-2-2 {
         padding: 2rem;
-        border: 1px solid gray;
+      
        
     }
     

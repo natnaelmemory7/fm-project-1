@@ -1,9 +1,53 @@
+@use  "../base/config"  as *;
+
 
 
 .card {
     display: flex;
     flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+
+    
+    &--hero,&--different, &--breadcrumb {
+        gap: 5rem;
+
+        align-items: center;
+    }
+
+    &--breadcrumb {
+        padding: 4rem;
+        border: 3px black solid;
+        background-color: $primary-color;
+        position: relative;
+    }
+
+   
+}
+
+
+
+@media screen and (min-width: 768px){
+
+    
+.card {
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     justify-content: center;
-    align-items: center;
+  
+   &--hero, &--different {
+    align-items: flex-start;
+ 
+   }
+
+   &--breadcrumb {
+    flex-direction: row;
+    justify-content: space-between;
+   }
+
 }
+  
+
+}
+

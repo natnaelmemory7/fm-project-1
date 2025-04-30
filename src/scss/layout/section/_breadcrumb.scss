@@ -2,72 +2,13 @@
 
 @use  "../../base/config"  as *;
 
+.breadcrumb {
+
+    margin: 14rem 0;
+}
 
 .breadcrumb {
     position: relative;
     overflow: hidden !important;
     margin-bottom: 14rem;
-    
-    .col-2-1,
-    .col-2-2{
-        border: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;    
-    }
-
-     
-    &__inner {
-        background-color: $purple-900;
-        padding: 4rem 1rem;
-        
-    }
-
-
-    .title.title--breadcrumb {
-        color: white;
-        text-align: center;
-    }
-
-    .img.img--hww {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 200px;
-        z-index: 1000;
-        
-    }
-
-
-}
-
-
-@media  (min-width: 768px){
-
-    
-    .img.img--hww {
-        display: none;
-    }
-
-    .breadcrumb {
-
-        title.title--breadcrumb {
-            font-size: $font-size--md;
-        } 
-
-        .col-2-1  {
-           
-            grid-column: 1/9;
-        }
-
-        .col-2-2 {
-            grid-column: 10/13;
-        }
-
-    }
-  
-
-    
-
 }

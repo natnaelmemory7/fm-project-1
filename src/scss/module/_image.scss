@@ -6,5 +6,35 @@
     width: 100%;
 }
 
+.icon {
+    width: 100%;
+    &--different {
+        width: 30%;
+    }
+}
 
 
+
+.img {
+    &--breadcrumb {
+        width: 499px;
+        position: absolute;
+      top: -10px;
+      right: -20px;
+      
+    }
+    
+}
+
+@media screen and (min-width: 768px){
+
+    .img {
+        &--breadcrumb {
+            width: 499px;
+            position: absolute;
+            top: 9;
+            right: 9px;
+        }
+    }
+    
+}

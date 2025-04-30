@@ -2,6 +2,7 @@ const { src, dest, series, watch } = require('gulp');
 const del = require('del');
 const browserSync = require('browser-sync').create(); 
 const sass = require('gulp-sass')(require('sass'));
+const sourcemaps = require('gulp-sourcemaps');
 
 
 
@@ -36,7 +37,9 @@ function html() {
 // SCSS Task
 function scss() {
   return src('src/scss/**/*.scss')  // Path to your SCSS files
+    .pipe(sourcemaps.init()) 
     .pipe(sass().on('error', sass.logError))  // Compile SCSS to CSS and log errors
+    .pipe(sourcemaps.write('.'))  
     .pipe(dest('build/css'))
     .pipe(browserSync.stream()); // Output the compiled CSS to the 'build/css' directory
 }
