@@ -14,7 +14,8 @@
      
      &--different {
       
-          margin-bottom: 3rem;           
+          margin-bottom: 3rem;   
+         
 
      }
 
@@ -58,6 +59,16 @@
       &--hero {
         color: white;
       }
+
+      &--different {
+          color: var(--$grayish-purple);
+        
+      }
+
+}
+
+.footer h4 {
+     text-align: center;
 }
 
 

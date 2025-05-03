@@ -5,17 +5,35 @@
     border-radius: 1rem;
     background-color: black;
     color: white;
-    display: inline-block
-}
+    display: inline-block;
 
-.link:hover {
-    background-color: #ccc;
-    color: #333;
-} 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+ 
+}
 
 
 .link.link--logo {
     background-color: white;
 }
 
+
+@media (min-width: 768px){
+    .item.item--nav:last-child {
+        background-color: red !important;
+    }
+}
 

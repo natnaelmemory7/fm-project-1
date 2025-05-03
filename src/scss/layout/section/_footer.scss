@@ -52,11 +52,14 @@
 @media  (min-width: 768px) {
    
     .footer__inner--top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
        
-        .col-2-1,
-        .col-2-2 {
-            display: block;
-        }
+        // .col-2-1,
+        // .col-2-2 {
+        //     display: block;
+        // }
     }
 
     .footer__inner--bottom {
@@ -68,6 +71,8 @@
             text-align: left;
         }
     }
+
+
 
 }
 

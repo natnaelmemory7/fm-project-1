@@ -17,6 +17,9 @@
     display: inline-block;
 }
 
+.item.item--nav:last-child {
+    border: 2px solid $primary-color;
+}
 .link.link--nav {
     background-color: white;
     color: $primary-color;
@@ -26,6 +29,11 @@
     font-family: $font-family--body;
     font-size: $fs-nav-link;
 
+}
+
+.link.link--nav:hover {
+    background-color: $primary-color;
+    color: white;
 }
 
 .list.list--nav {
